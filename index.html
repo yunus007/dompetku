@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DompetKu – Kebijakan Privasi &amp; Hapus Akun</title>
+<style>
+  :root {
+    --primary: #185FA5; --primary-container: #D6E6F8; --on-primary-container: #042C53;
+    --bg: #F8F9FC; --surface: #FFFFFF; --text: #191C20; --muted: #43474E; --line: #C3C6CF;
+    --error-container: #FFDAD6; --on-error-container: #410002;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: Roboto, "Segoe UI", system-ui, -apple-system, sans-serif; line-height: 1.6; }
+  header { background: var(--primary); color: #fff; padding: 28px 20px 24px; }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand svg { flex: none; }
+  .brand h1 { margin: 0; font-size: 1.5rem; font-weight: 700; }
+  .brand p { margin: 2px 0 0; opacity: .9; font-size: .95rem; }
+  nav { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; }
+  nav a { color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,.6);
+    border-radius: 999px; padding: 6px 14px; font-size: .9rem; }
+  nav a:hover, nav a:focus-visible { background: rgba(255,255,255,.15); }
+  main { padding: 24px 20px 48px; }
+  section { background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+    padding: 24px; margin-bottom: 20px; scroll-margin-top: 16px; }
+  h2 { margin: 0 0 4px; font-size: 1.35rem; color: var(--primary); }
+  h3 { margin: 22px 0 6px; font-size: 1.05rem; }
+  .meta { color: var(--muted); font-size: .9rem; margin: 0 0 8px; }
+  p, li { font-size: 1rem; }
+  ol, ul { padding-left: 1.3rem; }
+  .note { background: var(--primary-container); color: var(--on-primary-container);
+    border-radius: 12px; padding: 14px 16px; margin: 16px 0; }
+  .warn { background: var(--error-container); color: var(--on-error-container);
+    border-radius: 12px; padding: 14px 16px; margin: 16px 0; }
+  code, .email { font-family: "Roboto Mono", ui-monospace, monospace; font-size: .95rem;
+    background: #ECEEF2; border-radius: 6px; padding: 1px 6px; word-break: break-all; }
+  a { color: var(--primary); }
+  footer { color: var(--muted); font-size: .85rem; text-align: center; padding: 0 20px 32px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <svg width="52" height="52" viewBox="0 0 512 512" aria-hidden="true">
+        <rect width="512" height="512" rx="112" fill="#FFFFFF" fill-opacity=".15"/>
+        <path fill="#FFFFFF" d="M148,148H364A44,44 0,0 1,408 192V336A44,44 0,0 1,364 380H148A44,44 0,0 1,104 336V192A44,44 0,0 1,148 148Z"/>
+        <path fill="#D6E6F8" d="M132,148H380A28,28 0,0 1,408 176A28,28 0,0 1,380 204H132A28,28 0,0 1,104 176A28,28 0,0 1,132 148Z"/>
+        <path fill="#D6E6F8" d="M328,236H404A32,32 0,0 1,436 268V300A32,32 0,0 1,404 332H328A32,32 0,0 1,296 300V268A32,32 0,0 1,328 236Z"/>
+        <circle cx="344" cy="284" r="18" fill="#185FA5"/>
+      </svg>
+      <div>
+        <h1>DompetKu</h1>
+        <p>Catatan Keuangan Harian · YN Digital Studio</p>
+      </div>
+    </div>
+    <nav aria-label="Bagian halaman">
+      <a href="#kebijakan-privasi">Kebijakan Privasi</a>
+      <a href="#hapus-akun">Hapus Akun &amp; Data</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="kebijakan-privasi">
+    <h2>Kebijakan Privasi</h2>
+    <p class="meta">Berlaku sejak 18 November 2026 · Aplikasi: DompetKu (Android) · Pengembang: YN Digital Studio</p>
+
+    <h3>Ringkasan</h3>
+    <p>DompetKu adalah aplikasi catatan keuangan pribadi dari YN Digital Studio. Catatan keuangan Anda disimpan di perangkat Anda sendiri dan tidak dikirim ke server kami.</p>
+
+    <h3>Data akun</h3>
+    <p>Untuk membuat akun dan masuk, kami memakai layanan akun dari Google sebagai penyedia layanan. Data yang diproses: nama, alamat email, kata sandi (dikelola layanan tersebut, tidak pernah disimpan atau dilihat oleh aplikasi), dan ID pengguna. Data ini dipakai hanya untuk autentikasi, verifikasi email, dan atur ulang kata sandi.</p>
+
+    <h3>Data keuangan</h3>
+    <p>Transaksi, kategori, anggaran, serta utang-piutang disimpan di database lokal perangkat dan dipisahkan per akun. Data ini tidak dikirim ke layanan akun, ke server kami, maupun ke penyedia iklan.</p>
+
+    <h3>Cadangan perangkat</h3>
+    <p>Aplikasi mengizinkan fitur cadangan otomatis Android. Jika cadangan Google aktif di perangkat Anda, salinan data aplikasi (termasuk catatan keuangan) dapat disimpan di akun Google Anda oleh sistem Android dan dipulihkan saat memasang ulang aplikasi. Anda dapat mematikannya di pengaturan cadangan perangkat. Pengaturan PIN tidak ikut dicadangkan.</p>
+
+    <h3>Kunci aplikasi</h3>
+    <p>PIN tidak disimpan apa adanya: PIN diubah menjadi hash lalu dienkripsi dengan Android Keystore di perangkat. Data sidik jari atau wajah dikelola sepenuhnya oleh sistem Android dan tidak pernah diakses aplikasi.</p>
+
+    <h3>Iklan</h3>
+    <p>Aplikasi menampilkan iklan melalui Google AdMob. AdMob dapat mengumpulkan informasi perangkat seperti ID iklan, alamat IP, dan interaksi dengan iklan sesuai kebijakan privasi Google. Di wilayah yang mewajibkan, aplikasi meminta persetujuan Anda lebih dulu, dan pilihan itu dapat diubah di Pengaturan → Pilihan privasi iklan. Iklan tidak menerima data keuangan Anda.</p>
+
+    <h3>Kehilangan data</h3>
+    <p>Karena disimpan lokal, data keuangan dapat hilang jika aplikasi dihapus, data aplikasi dibersihkan, atau perangkat hilang, kecuali dapat dipulihkan dari cadangan perangkat.</p>
+
+    <h3>Hak Anda</h3>
+    <p>Anda dapat mengubah nama di menu Profil serta mengubah atau menghapus catatan di dalam aplikasi. Untuk menghapus akun beserta seluruh data, lihat bagian <a href="#hapus-akun">Hapus Akun &amp; Data</a>.</p>
+
+    <h3>Anak-anak</h3>
+    <p>DompetKu tidak ditujukan untuk anak di bawah 13 tahun.</p>
+
+    <h3>Perubahan kebijakan</h3>
+    <p>Bila kebijakan ini berubah, versi terbaru dan tanggal berlakunya akan diperbarui di halaman ini dan di dalam aplikasi.</p>
+
+    <h3>Kontak</h3>
+    <p>Pertanyaan tentang privasi dapat dikirim ke YN Digital Studio melalui email <span class="email">yunus.label@gmail.com</span>.</p>
+  </section>
+
+  <section id="hapus-akun">
+    <h2>Hapus Akun &amp; Data DompetKu</h2>
+    <p class="meta">Pengembang: YN Digital Studio</p>
+
+    <h3>Cara 1 — Dari dalam aplikasi (langsung)</h3>
+    <ol>
+      <li>Buka aplikasi <strong>DompetKu</strong> dan masuk ke akun Anda.</li>
+      <li>Ketuk foto profil di kanan atas Beranda untuk membuka <strong>Pengaturan</strong>.</li>
+      <li>Pilih <strong>Hapus akun</strong>.</li>
+      <li>Masukkan kata sandi akun, centang pernyataan, lalu ketuk <strong>Hapus akun permanen</strong>.</li>
+    </ol>
+    <p>Akun dan data langsung dihapus saat itu juga.</p>
+
+    <h3>Cara 2 — Tanpa aplikasi (lewat email)</h3>
+    <p>Bila aplikasi sudah tidak terpasang, kirim email ke <span class="email">yunus.label@gmail.com</span> <strong>dari alamat email akun DompetKu Anda</strong> dengan subjek <code>Hapus akun DompetKu</code>. Permintaan diproses paling lama <strong>30 hari</strong>, dan Anda akan menerima konfirmasi setelah akun dihapus.</p>
+
+    <h3>Data yang dihapus</h3>
+    <ul>
+      <li>Akun login: nama, alamat email, dan ID pengguna — dihapus permanen.</li>
+      <li>Seluruh catatan keuangan di perangkat tempat penghapusan dilakukan dari aplikasi (transaksi, kategori, anggaran, utang-piutang) beserta PIN dan pengaturan kunci.</li>
+    </ul>
+
+    <h3>Data yang tidak kami simpan atau yang tetap ada</h3>
+    <ul>
+      <li>Catatan keuangan hanya ada di perangkat Anda; kami tidak menyimpannya di server. Bila akun dihapus lewat email, catatan di perangkat Anda dapat dihapus dengan mencopot aplikasi atau menghapus data aplikasi di pengaturan Android.</li>
+      <li>Salinan di cadangan Google pada akun Google Anda dikelola oleh Android; hapus melalui pengaturan cadangan Google bila perlu.</li>
+      <li>Kami tidak menyimpan salinan data akun setelah penghapusan.</li>
+    </ul>
+
+    <div class="warn">Penghapusan akun bersifat permanen dan tidak dapat dibatalkan.</div>
+  </section>
+</main>
+
+<footer>© 2026 YN Digital Studio · DompetKu — Catatan Keuangan Harian</footer>
+</body>
+</html>
